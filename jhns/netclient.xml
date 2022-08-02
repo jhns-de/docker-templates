@@ -25,7 +25,7 @@
        Description="Netmaker Access Token" 
        Mask="false" 
        Display="always" 
-       Required="true">TOKEN</Config>
+       Required="true"></Config>
   <Version>05616fd2</Version>
   <Icon>https://uploads-ssl.webflow.com/623390d5ead4650d9c03f969/623390d5ead465111a03f9e0_netmaker-webclip.png</Icon>
   <ExtraParams></ExtraParams>
