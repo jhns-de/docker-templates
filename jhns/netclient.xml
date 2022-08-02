@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>netclient</Name>
+  <Description></Description>
+  <Registry>https://registry.hub.docker.com/u/gravitl/netclient/</Registry>
+  <Repository>gravitl/netclient</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Environment/>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/netclient/config</HostDir>
+      <ContainerDir>/etc/netclient</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Config 
+       Type="Variable" 
+       Name="TOKEN" 
+       Target="TOKEN" 
+       Default="" 
+       Description="Netmaker Access Token" 
+       Mask="false" 
+       Display="always" 
+       Required="true">TOKEN</Config>
+  <Version>05616fd2</Version>
+  <Icon>https://uploads-ssl.webflow.com/623390d5ead4650d9c03f969/623390d5ead465111a03f9e0_netmaker-webclip.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
