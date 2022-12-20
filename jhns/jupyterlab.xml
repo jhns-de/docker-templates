@@ -4,7 +4,7 @@
   </Changes>
   <Name>jupyterlab</Name>
   <Repository>jupyter/docker-stacks</Repository>
-  <Registry>https://hub.docker.com/r/jupyter/minimal-notebook</Registry>
+  <Registry>https://registry.hub.docker.com/u/jupyter/minimal-notebook</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
