@@ -40,8 +40,8 @@
       <Value>yes</Value>
     </Variable>
     <Variable>
-      <Name>GRANT_SUDO</Name>
-      <Value>yes</Value>
+      <Name>CHOWN_HOME_OPTS</Name>
+      <Value>-R</Value>
     </Variable>
     <Variable>
       <Name>CHOWN_EXTRA</Name>
