@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>jupyterlab datascience</Name>
-  <Repository>jupyter/docker-stacks</Repository>
+  <Repository>jupyter/datascience-notebook</Repository>
   <Registry>https://docker.io/jupyter/datascience-notebook</Registry>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
