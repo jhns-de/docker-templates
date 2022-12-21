@@ -26,7 +26,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/jupyterlab</HostDir>
-      <ContainerDir>/home/jovyan/work</ContainerDir>
+      <ContainerDir>/home/jovyan</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
