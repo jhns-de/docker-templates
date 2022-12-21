@@ -1,35 +1,23 @@
-<?xml version="1.0"?>
-<Container version="2">
-  <Changes>
-  </Changes>
-  <Name>jupyterlab</Name>
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>jupyterlab datascience</Name>
   <Repository>jupyter/docker-stacks</Repository>
-  <Registry>https://registry.hub.docker.com/u/jupyter/minimal-notebook</Registry>
-  <Network>bridge</Network>
-  <MyIP/>
+  <Registry>https://docker.io/jupyter/datascience-notebook</Registry>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support></Support>
   <Project>https://jupyter.org/</Project>
   <Overview>JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.
-  The logs contain a token needed for first login[br]&#xD;</Overview>
-  <Category>Productivity: Tools:</Category>
+  The logs contain a token needed for first login.</Overview>
   <WebUI>http://[IP]:[PORT:8888]</WebUI>
-  <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/BGameiro2000/unraid-ca/master/jupyterlab/icon.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled></DateInstalled>
-  <DonateText/>
-  <DonateLink></DonateLink>
   <Description>JupyterLab is a web-based interactive development environment for Jupyter notebooks, code, and data.
-  The logs contain a token needed for first login[br]&#xD;</Description>
+  The logs contain a token needed for first login.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>9999</HostPort>
+        <HostPort>8888</HostPort>
         <ContainerPort>8888</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -43,8 +31,22 @@
     </Volume>
   </Data>
   <Environment>
+    <Variable>
+      <Name>RESTARTABLE</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>CHOWN_HOME</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>GRANT_SUDO</Name>
+      <Value>yes</Value>
+    </Variable>
+    <Variable>
+      <Name>CHOWN_EXTRA</Name>
+      <Value>/home/jovyan/work</Value>
+    </Variable>
   </Environment>
   <Labels/>
-  <Config Name="WebUI" Target="8888" Default="" Mode="tcp" Description="Container Port: 8888" Type="Port" Display="always" Required="true" Mask="false">9999</Config>
-  <Config Name="Appdata" Target="/home/jovyan/work" Default="/mnt/user/appdata/jupyterlab" Mode="rw" Description="Container Path: /home/jovyan/work" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/jupyterlab</Config>
 </Container>
